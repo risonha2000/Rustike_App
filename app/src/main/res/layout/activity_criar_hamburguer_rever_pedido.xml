@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pao"
+    android:orientation="vertical"
+    tools:context=".CriarHamburguer_reverPedido">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleX="2.1"
+                    android:scaleY="2.1"
+                    android:translationY="-150dp"
+                    app:srcCompat="@drawable/background_circles" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView_barra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/barra_superior" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="14.5dp"
+                                android:background="@drawable/back_btn"
+                                android:onClick="paraNovidades" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="110dp"
+                                android:layout_marginRight="30dp"
+                                android:gravity="center"
+                                android:text="O seu Pedido"
+                                android:textColor="@color/white"
+                                android:textSize="21sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:translationX="30dp"
+                                app:srcCompat="@drawable/burger_barra" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/affogato_regular"
+                        android:text="O seu pedido:"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="62dp"
+                            android:layout_marginRight="62dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Pão Normal"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="2€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:layout_marginRight="33dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Maionese Alho"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="1,50€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Carne de Vaca"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="8€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Alfasse Frisada"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView58"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="0,25€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="61dp"
+                            android:layout_marginRight="61dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Tomate "
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="0,50€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Queijo Cheeddar"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="0,60€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="38dp"
+                            android:layout_marginRight="38dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Cebola Roxa"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="0,60€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="67dp"
+                            android:layout_marginRight="67dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Água Luso"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="1€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_ingrediente_rev"
+                            app:useMaterialThemeColors="false" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Cheese Sticks"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="1€"
+                            android:textSize="27dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_bold"
+                            android:text="Total:"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/textView65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_bold"
+                            android:text="14,45€"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/textView66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Guardar"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/imageView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_star"
+                            android:gravity="center"
+                            android:translationX="10dp"
+                            android:translationY="-3dp"
+                            app:useMaterialThemeColors="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:backgroundTint="#CF4637"
+                            android:fontFamily="@font/affogato_medium"
+                            android:onClick="paraEntradas"
+                            android:text="Voltar"
+                            android:textSize="15sp"
+                            app:cornerRadius="19dp" />
+
+                        <ImageView
+                            android:id="@+id/bolinhas2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/bolinhas_reverpedido" />
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:backgroundTint="#CF4637"
+                            android:fontFamily="@font/affogato_medium"
+                            android:onClick="paraEfetuarPagamento"
+                            android:text="Próximo"
+                            android:textSize="15sp"
+                            app:cornerRadius="19dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

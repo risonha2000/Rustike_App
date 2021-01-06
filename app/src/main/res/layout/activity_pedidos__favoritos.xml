@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pedidos_Favoritos">
+
+    <ImageView
+        android:id="@+id/imageView52"
+        android:layout_width="518dp"
+        android:layout_height="449dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="145dp"
+        app:srcCompat="@drawable/favorite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_barra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/barra_superior" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14.5dp"
+                        android:background="@drawable/back_btn"
+                        android:onClick="paraNovidades" />
+
+                    <TextView
+                        android:id="@+id/historico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center"
+                        android:text="Favoritos"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:translationX="40dp"
+                        app:srcCompat="@drawable/burger_barra" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp">
+
+                <ImageView
+                    android:id="@+id/fundo_fav_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/b_icon" />
+
+                <ImageView
+                    android:id="@+id/icon_fav_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/icon_favoritos" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/p_personalizado_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:text="Pedido Personalizado"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/linha_fav_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8.5dp"
+                    android:layout_marginRight="45.5dp"
+                    app:srcCompat="@drawable/linha_favoritos" />
+
+                <TextView
+                    android:id="@+id/preco_personalizado_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="9.5dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:text="12€" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp">
+
+                <ImageView
+                    android:id="@+id/fundo_fav_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/b_icon" />
+
+                <ImageView
+                    android:id="@+id/icon_fav_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/icon_favoritos" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/p_personalizado_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:text="Pedido Personalizado"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/linha_fav_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8.5dp"
+                    android:layout_marginRight="45.5dp"
+                    app:srcCompat="@drawable/linha_favoritos" />
+
+                <TextView
+                    android:id="@+id/preco_personalizado_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="9.5dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:text="12€" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:onClick="paraHistoricoPedido">
+
+                <ImageView
+                    android:id="@+id/fundo_fav_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="paraHistoricoPedido"
+                    app:srcCompat="@drawable/b_icon" />
+
+                <ImageView
+                    android:id="@+id/icon_fav_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="paraHistoricoPedido"
+                    app:srcCompat="@drawable/icon_favoritos" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="paraHistoricoPedido"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/p_personalizado_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:onClick="paraHistoricoPedido"
+                    android:text="Jucie Lucy"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/linha_fav_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8.5dp"
+                    android:layout_marginRight="45.5dp"
+                    android:onClick="paraHistoricoPedido"
+                    app:srcCompat="@drawable/linha_favoritos" />
+
+                <TextView
+                    android:id="@+id/preco_personalizado_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="9.5dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:onClick="paraHistoricoPedido"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:text="12€" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="37dp">
+
+                <ImageView
+                    android:id="@+id/fundo_fav_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/b_icon" />
+
+                <ImageView
+                    android:id="@+id/icon_fav_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/icon_favoritos" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/p_personalizado_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:text="Jucie Lucy"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/linha_fav_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8.5dp"
+                    android:layout_marginRight="45.5dp"
+                    app:srcCompat="@drawable/linha_favoritos" />
+
+                <TextView
+                    android:id="@+id/preco_personalizado_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="9.5dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:text="12€" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

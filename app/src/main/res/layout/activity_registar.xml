@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".Registar">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView64"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleX="1.1"
+                    android:scaleY="1.1"
+                    app:srcCompat="@drawable/background_registar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#52000000"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/backBTN"
+                        android:layout_width="60dp"
+                        android:layout_height="59dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:onClick="paraEntrar"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/voltarbtn" />
+
+                    <TextView
+                        android:id="@+id/textView96"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/sansita_regular"
+                        android:text="Registar"
+                        android:textAlignment="center"
+                        android:textColor="#F9B42D"
+                        android:textSize="33sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="55dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView97"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Email"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <EditText
+                            android:id="@+id/editTextTextEmailAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/textbox_regular"
+                            android:ems="10"
+                            android:inputType="textEmailAddress" />
+
+                        <TextView
+                            android:id="@+id/textView102"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Palavra-Passe"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/textbox_regular"
+                            android:ems="10"
+                            android:inputType="textPassword" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView103"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/affogato_medium"
+                                    android:text="Nome"
+                                    android:textColor="#F9B42D"
+                                    android:textSize="21sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextTextPersonName5"
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/textbox_regular"
+                                    android:ems="10"
+                                    android:inputType="textPersonName" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="9dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView110"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/affogato_medium"
+                                    android:text="Apelido"
+                                    android:textColor="#F9B42D"
+                                    android:textSize="21sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextTextPersonName11"
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/textbox_regular"
+                                    android:ems="10"
+                                    android:inputType="textPersonName" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView104"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Sexo"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="5dp"
+                                android:button="@drawable/sexo_selector"
+                                android:fontFamily="@font/affogato_medium"
+                                android:text="Masculino"
+                                android:textColor="#F9B42D"
+                                android:textSize="17sp"
+                                app:useMaterialThemeColors="false" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="5dp"
+                                android:button="@drawable/sexo_selector"
+                                android:fontFamily="@font/affogato_medium"
+                                android:text="Feminino"
+                                android:textColor="#F9B42D"
+                                android:textSize="17sp"
+                                app:useMaterialThemeColors="false" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/textView105"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Data de Nascimento"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <EditText
+                            android:id="@+id/editTextDate"
+                            android:layout_width="221dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/textbox_regular"
+                            android:ems="10"
+                            android:inputType="date" />
+
+                        <TextView
+                            android:id="@+id/textView107"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Morada"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/textbox_regular"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                        <TextView
+                            android:id="@+id/textView108"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Nº de Porta"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber2"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/textbox_regular"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/textView109"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Código-Postal"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPostalAddress2"
+                            android:layout_width="197dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/textbox_regular"
+                            android:ems="10"
+                            android:inputType="textPostalAddress" />
+
+                        <TextView
+                            android:id="@+id/textView111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Cidade"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName12"
+                            android:layout_width="221dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/textbox_regular"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                        <TextView
+                            android:id="@+id/textView112"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="Telefone"
+                            android:textColor="#F9B42D"
+                            android:textSize="21sp" />
+
+                        <EditText
+                            android:id="@+id/editTextPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/textbox_regular"
+                            android:ems="10"
+                            android:inputType="phone" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="192dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="50dp"
+                        android:backgroundTint="#CF4637"
+                        android:fontFamily="@font/affogato_medium"
+                        android:onClick="paraNovidades"
+                        android:text="Registar"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        app:cornerRadius="30dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

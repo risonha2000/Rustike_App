@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pedidos_Historico">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_barra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/barra_superior" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14.5dp"
+                android:background="@drawable/back_btn"
+                android:onClick="paraMenuInicial" />
+
+            <TextView
+                android:id="@+id/historico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Histórico"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:translationX="40dp"
+                app:srcCompat="@drawable/burger_barra" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="79dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sansita_regular"
+            android:onClick="paraPedidoDecorrer"
+            android:text="A decorrer"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/sansita_regular"
+            android:text="Histórico"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7.5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="195.5dp"
+            app:srcCompat="@drawable/historico_amarelo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68.8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ham_historico1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.7dp"
+                    app:srcCompat="@drawable/ham_historico" />
+
+                <ImageView
+                    android:id="@+id/imageView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="68.4dp"
+                    app:srcCompat="@drawable/historico_pref" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17.5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/personalizado_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26.7dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/affogato_medium"
+                    android:text="Pedido Personalizado"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/barra_historico_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/historico_preto" />
+
+                <TextView
+                    android:id="@+id/preco_historico_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9.5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/affogato_medium"
+                    android:text="12€"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ham_historico2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ham_historico" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17.5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/personalizado_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/affogato_medium"
+                    android:text="Pedido Personalizado"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/barra_historico_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/historico_preto" />
+
+                <TextView
+                    android:id="@+id/preco_historico_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9.5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/affogato_medium"
+                    android:text="12€"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:gravity="center"
+            android:onClick="paraHistoricoPedido"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ham_historico3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="paraHistoricoPedido"
+                app:srcCompat="@drawable/ham_historico" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17.5dp"
+                android:onClick="paraHistoricoPedido"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/personalizado_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/affogato_medium"
+                    android:onClick="paraHistoricoPedido"
+                    android:text="Jucie Lucy"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/barra_historico_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="paraHistoricoPedido"
+                    app:srcCompat="@drawable/historico_preto" />
+
+                <TextView
+                    android:id="@+id/preco_historico_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9.5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/affogato_medium"
+                    android:onClick="paraHistoricoPedido"
+                    android:text="12€"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

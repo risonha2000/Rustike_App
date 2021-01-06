@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ementa_infoProduto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_barra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="barra_juicyLucy"
+                android:src="@drawable/barra_superior" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14.5dp"
+                    android:background="@drawable/back_btn"
+                    android:contentDescription="retroceder"
+                    android:onClick="paraEmentaHamburguer" />
+
+                <TextView
+                    android:id="@+id/historico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="Juicy Lucy"
+                    android:textColor="@color/white"
+                    android:textSize="21sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:contentDescription="icon"
+                    android:translationX="40dp"
+                    app:srcCompat="@drawable/burger_barra" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/info_juicy" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="190dp"
+                android:contentDescription="barraRed"
+                app:srcCompat="@drawable/retred_juicy" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/sansita_bold"
+                android:text="Juicy Lucy"
+                android:textColor="#FF9800"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="413dp"
+                android:layout_marginTop="270dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info_ingredientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:fontFamily="@font/sansita_regular"
+                    android:text="Ingredientes"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/imageView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="linha"
+                    app:srcCompat="@drawable/linha_juicy" />
+
+                <TextView
+                    android:id="@+id/ing_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:text="Carne de Vaca" />
+
+                <TextView
+                    android:id="@+id/ing_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:text="Pão Normal" />
+
+                <TextView
+                    android:id="@+id/ing_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:text="Cebola Normal" />
+
+                <TextView
+                    android:id="@+id/ing_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:text="Queijo Cheddar" />
+
+                <TextView
+                    android:id="@+id/ing_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:text="Alface Frisada" />
+
+                <TextView
+                    android:id="@+id/ing_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:text="Rodelas de Tomate" />
+
+                <TextView
+                    android:id="@+id/ing_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:text="Ketchup" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="150dp"
+                    android:layout_marginBottom="110dp">
+
+                    <TextView
+                        android:id="@+id/preco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/affogato_regular"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        tools:text="12€" />
+
+                    <ImageView
+                        android:id="@+id/imageView46"
+                        android:layout_width="51dp"
+                        android:layout_height="13dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        app:srcCompat="@drawable/caminho_juicy" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

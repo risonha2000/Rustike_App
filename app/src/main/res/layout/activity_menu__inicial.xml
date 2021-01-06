@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brackground_menuprincipal"
+    android:orientation="vertical"
+    tools:context=".Menu_Inicial">
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo_menu" />
+
+    <ImageButton
+        android:id="@+id/imageButton36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        android:onClick="paraEntrar"
+        app:srcCompat="@drawable/btn_menu1" />
+
+    <ImageButton
+        android:id="@+id/imageButton37"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:background="@null"
+        android:onClick="paraEmentaInicial"
+        app:srcCompat="@drawable/btn_menu2" />
+
+    <ImageButton
+        android:id="@+id/imageButton38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:background="@null"
+        android:onClick="paraPedidoDecorrer"
+        app:srcCompat="@drawable/btn_menu3" />
+</LinearLayout>

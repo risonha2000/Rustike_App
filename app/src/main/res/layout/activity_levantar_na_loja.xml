@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LevantarNaLoja">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:translationY="100dp"
+            app:srcCompat="@drawable/background_img_efetuarpedido" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView_barra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/barra_superior" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14.5dp"
+                        android:background="@drawable/back_btn"
+                        android:onClick="paraNovidades" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="Efetuar Pagamento"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:translationX="30dp"
+                        app:srcCompat="@drawable/burger_barra" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="55dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView99"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="@font/sansita_regular"
+                        android:onClick="paraEfetuarPagamento"
+                        android:text="Entregar"
+                        android:textAlignment="center"
+                        android:textSize="21sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView57"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0"
+                        android:scaleX="1.6"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/linha_ef_lr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="55dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="@font/sansita_regular"
+                        android:text="Levantar"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="21sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView58"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0"
+                        android:scaleX="1.6"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/linha_ef_lr" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sansita_regular"
+                    android:text="A Nossa Morada"
+                    android:textColor="#555555"
+                    android:textSize="24sp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    app:srcCompat="@drawable/linebig_localizacao" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    android:columnCount="2"
+                    android:orientation="horizontal"
+                    android:rowCount="2">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:fontFamily="@font/affogato_regular"
+                        android:paddingLeft="14dp"
+                        android:text="Rua Do Salgueiral, nº 104"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:fontFamily="@font/affogato_regular"
+                        android:paddingLeft="14dp"
+                        android:text="Ansião, Leiria"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+                        android:layout_rowSpan="2"
+                        android:layout_column="0"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/rectangulo_localizacao" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:scaleX="1.11"
+                app:srcCompat="@drawable/mapa_localizacao" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#CF4637"
+                android:fontFamily="@font/affogato_medium"
+                android:onClick="paraPedidoDecorrer"
+                android:text="Finalizar Pedido"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                app:cornerRadius="19dp" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

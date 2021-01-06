@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_column="0"
+    android:background="@drawable/background_pao"
+    android:orientation="vertical"
+    tools:context=".CriarHamburguer_pao">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_barra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/barra_superior" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14.5dp"
+                android:background="@drawable/back_btn"
+                android:onClick="paraNovidades" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="Crie o seu Hambúrguer"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:translationX="30dp"
+                app:srcCompat="@drawable/burger_barra" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/caixa_escolha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imageView3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_medium"
+                    android:gravity="center"
+                    android:text="Selecione o tipo de pão "
+                    android:textSize="21sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/pao_selected" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sansita_regular"
+                    android:gravity="center"
+                    android:text="Pão Normal"
+                    android:textColor="#555555"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="#F5F5F5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/affogato_regular"
+                    android:gravity="center"
+                    android:text="Total:"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_regular"
+                    android:gravity="center"
+                    android:text="2€"
+                    android:textColor="#23A55A"
+                    android:textSize="36sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_escolha"
+            app:srcCompat="@drawable/red_border" />
+    </RelativeLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:columnCount="2"
+        app:rowCount="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_gravity="center_horizontal"
+            app:layout_row="0">
+
+            <CheckBox
+                android:id="@+id/checkBox_pao1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_pao1"
+                android:drawableTint="#FFFFFF"
+                app:useMaterialThemeColors="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_gravity="center_horizontal"
+            app:layout_row="0">
+
+            <CheckBox
+                android:id="@+id/checkBox_pao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_pao2"
+                android:drawableTint="#FFFFFF"
+                app:useMaterialThemeColors="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_gravity="center_horizontal"
+            app:layout_row="1">
+
+            <CheckBox
+                android:id="@+id/checkBox_pao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_pao3"
+                android:drawableTint="#FFFFFF"
+                app:useMaterialThemeColors="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_gravity="center_horizontal"
+            app:layout_row="1">
+
+            <CheckBox
+                android:id="@+id/checkBox_pao3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_pao4"
+                android:drawableTint="#FFFFFF"
+                app:useMaterialThemeColors="false" />
+        </LinearLayout>
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bolinhas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/bolinhas_pao" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="27dp"
+            android:layout_weight="0"
+            android:backgroundTint="#CF4637"
+            android:fontFamily="@font/affogato_medium"
+            android:onClick="paraTipoMolho"
+            android:text="Próximo"
+            android:textSize="15sp"
+            app:cornerRadius="19dp" />
+    </LinearLayout>
+
+</LinearLayout>

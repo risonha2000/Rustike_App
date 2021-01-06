@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Novidades">
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="478dp"
+        android:layout_height="2000dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/fundo_novidades" />
+
+    <ImageView
+        android:id="@+id/imageView66"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo_fundo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_barra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/barra_superior" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14.5dp"
+                        android:background="@drawable/back_btn"
+                        android:onClick="paraMenuInicial" />
+
+                    <TextView
+                        android:id="@+id/historico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="112.5dp"
+                        android:fontFamily="@font/affogato_regular"
+                        android:gravity="center"
+                        android:text="Novidades"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="65dp"
+                        android:layout_weight="1"
+                        android:translationX="30dp"
+                        app:srcCompat="@drawable/burger_barra" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="16dp"
+                    android:onClick="paraPerfil">
+
+                    <ImageView
+                        android:id="@+id/imageView59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="paraPerfil"
+                        app:srcCompat="@drawable/photo_utilizador" />
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/affogato_regular"
+                        android:text="José Rodrigues"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="480dp"
+                android:layout_height="573dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="29.7dp">
+
+                <ImageView
+                    android:id="@+id/imageView61"
+                    android:layout_width="498dp"
+                    android:layout_height="520dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/branco_novi" />
+
+                <ImageView
+                    android:id="@+id/imageView62"
+                    android:layout_width="422dp"
+                    android:layout_height="223dp"
+                    android:layout_marginLeft="26.5dp"
+                    android:layout_marginTop="33dp"
+                    app:srcCompat="@drawable/photo_juicy" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26.5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView60"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/base_novidade" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sansita_regular"
+                        android:text="Novidade"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="255dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sansita_regular"
+                        android:text="Juicy Lucy"
+                        android:textColor="#555555"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView63"
+                        android:layout_width="332dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/linha_novidade" />
+
+                    <TextView
+                        android:id="@+id/textView66"
+                        android:layout_width="325dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/affogato_regular"
+                        android:text="TextView"
+                        android:textSize="16sp"
+                        tools:text="Experimente o nosso Juicy Lucy!
+
+                        Um Hambúrguer com queijo recheado no interior da carne, para uma estrondosa sensação de sabor. Disponível no menu do nosso estabelecimento e para entrega ao domicílio. " />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageView65"
+                            android:layout_width="487dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/b_laranja_novi" />
+
+                        <TextView
+                            android:id="@+id/textView67"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="14 de Novembro de 2020"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="480dp"
+                android:layout_height="573dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp">
+
+                <ImageView
+                    android:id="@+id/branco_novi_1"
+                    android:layout_width="498dp"
+                    android:layout_height="520dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/branco_novi" />
+
+                <ImageView
+                    android:id="@+id/img_molhos_1"
+                    android:layout_width="422dp"
+                    android:layout_height="223dp"
+                    android:layout_marginLeft="26.5dp"
+                    android:layout_marginTop="33dp"
+                    app:srcCompat="@drawable/img_molhos" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26.5dp">
+
+                    <ImageView
+                        android:id="@+id/base_novidades_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/base_novidade" />
+
+                    <TextView
+                        android:id="@+id/novidades_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sansita_regular"
+                        android:text="Novidade"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="255dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_1_novidades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sansita_regular"
+                        android:text="Promoção"
+                        android:textColor="#555555"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/l_novidades_1"
+                        android:layout_width="332dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/linha_novidade" />
+
+                    <TextView
+                        android:id="@+id/texto_juicy"
+                        android:layout_width="325dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/affogato_regular"
+                        android:text="TextView"
+                        android:textSize="16sp"
+                        tools:text="Aproveite! Oferecemos 2 molhos ao fazer um pedido através da nossa App. Esta promoção estará disponível de 16 a 22 de Novembro de 2020.  " />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/b_laranja_1"
+                            android:layout_width="487dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/b_laranja_novi" />
+
+                        <TextView
+                            android:id="@+id/data_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="08 de Novembro de 2020"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="480dp"
+                android:layout_height="573dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp">
+
+                <ImageView
+                    android:id="@+id/branco_novi_2"
+                    android:layout_width="498dp"
+                    android:layout_height="520dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/branco_novi" />
+
+                <ImageView
+                    android:id="@+id/img_garcon"
+                    android:layout_width="422dp"
+                    android:layout_height="223dp"
+                    android:layout_marginLeft="26.5dp"
+                    android:layout_marginTop="33dp"
+                    app:srcCompat="@drawable/img_garcon" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26.5dp">
+
+                    <ImageView
+                        android:id="@+id/base_novidades_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/base_novidade" />
+
+                    <TextView
+                        android:id="@+id/novidades_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sansita_regular"
+                        android:text="Novidade"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="255dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_2_novidades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sansita_regular"
+                        android:text="Aviso"
+                        android:textColor="#555555"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/l_novidades_2"
+                        android:layout_width="332dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/linha_novidade" />
+
+                    <TextView
+                        android:id="@+id/texto_aviso"
+                        android:layout_width="325dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/affogato_regular"
+                        android:text="TextView"
+                        android:textSize="16sp"
+                        tools:text="Devido à situação social em que nos encontramos, irá ocorrer uma redução do numero de lotação máxima permitida dentro do nosso estabelecimento.
+Queremos promover as entregas ao domicilio, logo nos próximos 10 dias todos os pedidos efetuados atrevés da nossa App terão 5% de desconto." />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/b_laranja_2"
+                            android:layout_width="487dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/b_laranja_novi" />
+
+                        <TextView
+                            android:id="@+id/data_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/affogato_medium"
+                            android:text="08 de Novembro de 2020"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

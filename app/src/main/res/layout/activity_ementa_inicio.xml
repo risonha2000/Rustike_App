@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_ementa_inicio"
+    android:orientation="vertical"
+    tools:context=".Ementa_inicio">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_barra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/barra_superior" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14.5dp"
+                android:background="@drawable/back_btn"
+                android:onClick="paraMenuInicial" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="140dp"
+                android:gravity="center"
+                android:text="Ementa"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_weight="1"
+                android:translationX="30dp"
+                app:srcCompat="@drawable/burger_barra" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@null"
+                    android:onClick="paraEmentaHamburguer"
+                    android:scaleX="1.1"
+                    android:scaleY="1.1"
+                    app:srcCompat="@drawable/icon_burger_ementa1" />
+
+                <ImageButton
+                    android:id="@+id/imageView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:onClick="paraEmentaBebidas"
+                    android:scaleX="1.1"
+                    android:scaleY="1.1"
+                    app:srcCompat="@drawable/icon_bebidas_ementa1" />
+
+                <ImageButton
+                    android:id="@+id/imageView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:onClick="paraEmentaEntradas"
+                    android:scaleX="1.1"
+                    android:scaleY="1.1"
+                    app:srcCompat="@drawable/icon_entradas_ementa1" />
+
+                <ImageButton
+                    android:id="@+id/imageView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:onClick="paraEmentaSobremesas"
+                    android:scaleX="1.1"
+                    android:scaleY="1.1"
+                    app:srcCompat="@drawable/icon_sobremesa_ementa1" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|center|center_horizontal"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:srcCompat="@drawable/background_logo_ementa" />
+
+    </FrameLayout>
+</LinearLayout>

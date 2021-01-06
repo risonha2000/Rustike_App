@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".Faqs">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="393dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="87dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:translationX="140dp"
+        android:translationY="-20dp"
+        app:srcCompat="@drawable/fqas_background_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_barra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/barra_superior" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14.5dp"
+                    android:background="@drawable/back_btn"
+                    android:onClick="paraMenuInicial" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginRight="55dp"
+                    android:gravity="center"
+                    android:text="FAQs"
+                    android:textColor="@color/white"
+                    android:textSize="21sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:translationX="40dp"
+                    app:srcCompat="@drawable/burger_barra" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansita_regular"
+                android:text="Perguntas Frequentes"
+                android:textAlignment="center"
+                android:textSize="31sp" />
+
+            <ImageView
+                android:id="@+id/imageView49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/linha_faqs_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView76"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_medium"
+                    android:text="Os Hambúrgueres são totalmente\npersonalizáveis? "
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleX="1.1"
+                    app:srcCompat="@drawable/linha_faqs_2" />
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_regular"
+                    android:text="Sim, temos uma grande quantidade \nde ingrediente para escolher. "
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_medium"
+                    android:text="Quais são os métodos de pagamento \ndisponíveis?"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleX="1.3"
+                    app:srcCompat="@drawable/linha_faqs_2" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_regular"
+                    android:text="É possível pagar com: Dinheiro e Multibanco \nnas entregas ao domicilio, e MB Way, PayPal\ne Virtual Card através a nossa Aplicação."
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_medium"
+                    android:text="Os ingredientes são 100% naturais? "
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleX="1.2"
+                    app:srcCompat="@drawable/linha_faqs_2" />
+
+                <TextView
+                    android:id="@+id/textView81"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_regular"
+                    android:text="Sim, todos os ingrediente são produzidos \na partir de métodos 100% naturais. "
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView82"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_medium"
+                    android:text="É possível guardar os pedidos caso\nqueiramos voltar a pedi-los?"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleX="1.3"
+                    app:srcCompat="@drawable/linha_faqs_2" />
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/affogato_regular"
+                    android:text="Sim, basta adicionar o pedido aos favoritos\nou consultar a secção de pedidos da nossa\nAplicação."
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
